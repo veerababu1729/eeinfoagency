@@ -1,23 +1,27 @@
 import { ExternalLink, TrendingUp, Eye, ShoppingCart } from "lucide-react";
+import telugumemesImage from "@/assets/telugumemes.com image.png";
+import memecodeImage from "@/assets/memecode image.png";
 
 const projects = [
   {
     title: "telugumemes.com",
     description: "Meme video sharing platform",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
+    image: telugumemesImage,
+    url: "https://telugumemes.com",
     impacts: [
       { icon: TrendingUp, label: "SEO Optimized" },
       { icon: Eye, label: "100% Responsive" },
       { icon: Eye, label: "50,000+ Visitors" },
     ],
-    features: ["Aesthetic and interactive UI", "Video sharing capabilities", "Social engagement features"],
+    features: ["Aesthetic and interactive UI", "Video searching algorithm", "Social engagement features"],
   },
   {
     title: "memecode.in",
     description: "eBook selling eCommerce site",
-    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=600&fit=crop",
+    image: memecodeImage,
+    url: "https://memecode.in",
     impacts: [
-      { icon: TrendingUp, label: "10% Conversion Rate" },
+      { icon: TrendingUp, label: "7% Conversion Rate" },
       { icon: ShoppingCart, label: "1,200+ Sales" },
       { icon: Eye, label: "Creative UI/UX" },
     ],
@@ -42,16 +46,15 @@ const PortfolioSection = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`flex flex-col ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
-              } gap-12 items-center`}
+              className={`flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
+                } gap-12 items-center`}
             >
               {/* Device Mockup */}
               <div className="flex-1 w-full">
                 <div className="relative group">
                   {/* Glow effect */}
                   <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/5 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   {/* Device frame */}
                   <div className="relative glass-card p-3 rounded-2xl">
                     <div className="flex items-center gap-2 mb-3 px-2">
@@ -71,12 +74,17 @@ const PortfolioSection = () => {
 
               {/* Content */}
               <div className="flex-1 space-y-6">
-                <div className="flex items-center gap-3">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 group/link hover:opacity-80 transition-opacity"
+                >
                   <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                     {project.title}
                   </h3>
-                  <ExternalLink className="w-5 h-5 text-muted-foreground" />
-                </div>
+                  <ExternalLink className="w-5 h-5 text-primary group-hover/link:scale-110 transition-transform" />
+                </a>
 
                 <p className="text-lg text-muted-foreground">
                   {project.description}

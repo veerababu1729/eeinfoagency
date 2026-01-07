@@ -23,7 +23,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-padding relative">
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent" />
-      
+
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground">
@@ -49,7 +49,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                placeholder="John Doe"
+                placeholder="William K"
               />
             </div>
 
@@ -65,7 +65,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                placeholder="john@example.com"
+                placeholder="williamk@example.com"
               />
             </div>
 
@@ -106,7 +106,7 @@ const ContactSection = () => {
                   href="mailto:contact@eeinfo.com"
                   className="text-lg text-foreground hover:text-primary transition-colors"
                 >
-                  contact@eeinfo.com
+                  veerababup114@gmail.com
                 </a>
               </div>
             </div>
@@ -118,10 +118,10 @@ const ContactSection = () => {
               <div>
                 <p className="text-sm text-muted-foreground">Phone</p>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919701910239"
                   className="text-lg text-foreground hover:text-primary transition-colors"
                 >
-                  +91 98765 43210
+                  +91 9701910239
                 </a>
               </div>
             </div>
