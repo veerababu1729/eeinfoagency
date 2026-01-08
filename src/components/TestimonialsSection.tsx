@@ -1,24 +1,25 @@
-import { Star, Linkedin } from "lucide-react";
+import { Star } from "lucide-react";
 import userAvatar from "@/assets/user-avatar.png";
+import linkedinLogo from "@/assets/linkedinlogo.png";
 
 const testimonials = [
   {
     name: "Arun Kumar R",
-    role: "telugumemes cofounder",
+    role: "Telugumemes cofounder",
     content: "EE Info transformed our vision into reality. Their attention to detail and commitment to quality is unmatched. The conversion rate optimization they delivered exceeded all expectations.",
     rating: 5,
     linkedin: "https://www.linkedin.com/in/arun-kumar-rayudu-17311621b/",
   },
   {
     name: "Salmon Kaliboina",
-    role: "memecode.in founder",
+    role: "Memecode.in founder",
     content: "Working with EE Info was a game-changer. They don't just build websites; they create experiences that convert. Our sales increased by 40% after the redesign.",
     rating: 5,
     linkedin: "https://www.linkedin.com/in/ksb9100733887/",
   },
   {
     name: "Priya Sharma",
-    role: "interior designer",
+    role: "Interior designer",
     content: "The team at EE Info understands the psychology of design. They delivered a platform that not only looks stunning but drives real business results. Highly recommended!",
     rating: 5,
     linkedin: "https://linkedin.com/",
@@ -79,7 +80,11 @@ const TestimonialsSection = () => {
                     className="p-2 rounded-lg bg-gray-100 hover:bg-primary/20 transition-colors"
                     aria-label={`View ${testimonial.name}'s LinkedIn profile`}
                   >
-                    <Linkedin className="w-5 h-5 text-gray-600 hover:text-primary transition-colors" />
+                    <img
+                      src={linkedinLogo}
+                      alt="LinkedIn"
+                      className="w-5 h-5"
+                    />
                   </a>
                 )}
               </div>
