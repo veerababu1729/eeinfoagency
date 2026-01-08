@@ -83,7 +83,7 @@ const TestimonialsSection = () => {
                     <img
                       src={linkedinLogo}
                       alt="LinkedIn"
-                      className="w-5 h-5"
+                      className="w-6 h-6"
                     />
                   </a>
                 )}
