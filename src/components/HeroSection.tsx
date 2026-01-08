@@ -16,13 +16,13 @@ const HeroSection = () => {
           {/* Steve Jobs Image */}
           <div className="relative fade-in group">
             {/* Rotating shiny glow effects */}
-            <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary via-transparent to-transparent blur-xl opacity-80 animate-[spin_8s_linear_infinite]" />
-            <div className="absolute -inset-2 rounded-full bg-gradient-to-bl from-accent via-transparent to-transparent blur-xl opacity-80 animate-[spin_12s_linear_infinite_reverse]" />
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary/50 via-primary to-primary/50 blur-lg opacity-50 animate-[spin_20s_linear_infinite]" />
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-primary via-transparent to-transparent blur-lg opacity-60 animate-[spin_8s_linear_infinite]" />
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-bl from-accent via-transparent to-transparent blur-lg opacity-60 animate-[spin_12s_linear_infinite_reverse]" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/50 via-primary to-primary/50 blur-lg opacity-40 animate-[spin_20s_linear_infinite]" />
 
             {/* Main glow layers */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/30 to-primary/10 rounded-full blur-3xl group-hover:blur-[80px] transition-all duration-500" />
-            <div className="absolute -inset-6 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 rounded-full blur-3xl opacity-50" />
+            <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-2xl group-hover:blur-[60px] transition-all duration-500" />
+            <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 rounded-full blur-3xl opacity-30" />
 
             {/* Shimmer overlay effect */}
             <div className="absolute inset-0 rounded-full overflow-hidden">
